@@ -1,10 +1,11 @@
 # GenshinArtifactHelper
 A python script to automatically asses Genshin Impact artifacts to see which ones are worth keeping.
 
-
-!!!!!!
+!!!!!!!!!
+!!!!!!!!!
 Just noticed that it crashes if it encounters an artifact with less than 4 substats. I will fix this later.
-!!!!!!
+!!!!!!!!!
+!!!!!!!!!
 
 Takes input in the form of a JSON file formatted using the Genshin Open Object Description (GOOD) format. More info about the format can be found here:
 https://frzyc.github.io/genshin-optimizer/#/doc/
