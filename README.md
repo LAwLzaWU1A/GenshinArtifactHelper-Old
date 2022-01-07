@@ -6,7 +6,7 @@ Takes input in the form of a JSON file formatted using the Genshin Open Object D
 https://frzyc.github.io/genshin-optimizer/#/doc/
 
 
-Evaluates each artifact in the file based on set and stats and gives it a score for each character. The scores are based on the information in this document (Community Character Builder by the Genshin Helper Team):
+Evaluates each artifact in the file based on set and stats, gives it a score for each character and then writes the result to a file called "ArtifactResults.txt". The scores are based on the information in this document (Community Character Builder by the Genshin Helper Team):
 https://docs.google.com/spreadsheets/d/1gNxZ2xab1J6o1TuNVWMeLOZ7TPOqrsf3SshP5DLvKzI/pubhtml?gid=100510092#
 
 
