@@ -876,35 +876,36 @@ def CalcCharScore(artifact):
 
 #Evaluate all the substats
 
-    if artifact["substats"][0]["key"] == "hp" or artifact["substats"][1]["key"] == "hp" or artifact["substats"][2]["key"] == "hp" or artifact["substats"][3]["key"] == "hp":   #search all substats for flat HP
-        CharList = Eval_FlatHP(CharList)
-    
-    if artifact["substats"][0]["key"] == "hp_" or artifact["substats"][1]["key"] == "hp_" or artifact["substats"][2]["key"] == "hp_" or artifact["substats"][3]["key"] == "hp_":   #search all substats for HP percent
-        CharList = Eval_HPpercent(CharList)
-    
-    if artifact["substats"][0]["key"] == "atk" or artifact["substats"][1]["key"] == "atk" or artifact["substats"][2]["key"] == "atk" or artifact["substats"][3]["key"] == "atk":   #search all substats for flat ATK
-        CharList = Eval_FlatATK(CharList)
+    for i in range(len(artifact["substats"])) :    #Go through all substats
+        if artifact["substats"][i]["key"] == "hp":      #search all substats for flat HP
+            CharList = Eval_FlatHP(CharList)
 
-    if artifact["substats"][0]["key"] == "atk_" or artifact["substats"][1]["key"] == "atk_" or artifact["substats"][2]["key"] == "atk_" or artifact["substats"][3]["key"] == "atk_":   #search all substats for ATK percent
-        CharList = Eval_ATKpercent(CharList)
+        if artifact["substats"][i]["key"] == "hp_":    #search all substats for HP percent
+            CharList = Eval_HPpercent(CharList)
     
-    if artifact["substats"][0]["key"] == "def" or artifact["substats"][1]["key"] == "def" or artifact["substats"][2]["key"] == "def" or artifact["substats"][3]["key"] == "def":   #search all substats for flat DEF
-        CharList = Eval_FlatDEF(CharList)
+        if artifact["substats"][i]["key"] == "atk":   #search all substats for flat ATK
+            CharList = Eval_FlatATK(CharList)
+
+        if artifact["substats"][i]["key"] == "atk_":   #search all substats for ATK percent
+            CharList = Eval_ATKpercent(CharList)
     
-    if artifact["substats"][0]["key"] == "def_" or artifact["substats"][1]["key"] == "def_" or artifact["substats"][2]["key"] == "def_" or artifact["substats"][3]["key"] == "def_":   #search all substats for DEF percent
-        CharList = Eval_DEFpercent(CharList)
+        if artifact["substats"][i]["key"] == "def":   #search all substats for flat DEF
+            CharList = Eval_FlatDEF(CharList)
     
-    if artifact["substats"][0]["key"] == "eleMas" or artifact["substats"][1]["key"] == "eleMas" or artifact["substats"][2]["key"] == "eleMas" or artifact["substats"][3]["key"] == "eleMas":   #search all substats for Elemental Mastery
-        CharList = Eval_eleMas(CharList)
+        if artifact["substats"][i]["key"] == "def_":   #search all substats for DEF percent
+            CharList = Eval_DEFpercent(CharList)
+    
+        if artifact["substats"][i]["key"] == "eleMas":   #search all substats for Elemental Mastery
+            CharList = Eval_eleMas(CharList)
 
-    if artifact["substats"][0]["key"] == "enerRech_" or artifact["substats"][1]["key"] == "enerRech_" or artifact["substats"][2]["key"] == "enerRech_" or artifact["substats"][3]["key"] == "enerRech_":   #search all substats for Energy Recharge
-        CharList = Eval_enerRech(CharList)
+        if artifact["substats"][i]["key"] == "enerRech_":   #search all substats for Energy Recharge
+            CharList = Eval_enerRech(CharList)
 
-    if artifact["substats"][0]["key"] == "critRate_" or artifact["substats"][1]["key"] == "critRate_" or artifact["substats"][2]["key"] == "critRate_" or artifact["substats"][3]["key"] == "critRate_":   #search all substats for Crit Rate
-        CharList = Eval_critRate(CharList)
+        if artifact["substats"][i]["key"] == "critRate_":   #search all substats for Crit Rate
+            CharList = Eval_critRate(CharList)
 
-    if artifact["substats"][0]["key"] == "critDMG_" or artifact["substats"][1]["key"] == "critDMG_" or artifact["substats"][2]["key"] == "critDMG_" or artifact["substats"][3]["key"] == "critDMG_":   #search all substats for Crit DMG
-        CharList = Eval_critDMG(CharList)
+        if artifact["substats"][i]["key"] == "critDMG_":   #search all substats for Crit DMG
+            CharList = Eval_critDMG(CharList)
 
 
 
@@ -920,24 +921,19 @@ def CalcCharScore(artifact):
     if GoodForAnyone == True:       #Print the artifact that's good.
         print("")
         print("Set:", artifact["setKey"],"-", "Rarity:", artifact["rarity"], "-", "Level:", artifact["level"], "-", "Slot:", artifact["slotKey"])
-        print("Main Stat:", artifact["mainStatKey"])
-        print("Substat 0:", artifact["substats"][0]["key"])
-        print("Substat 1:", artifact["substats"][1]["key"])
-        print("Substat 2:", artifact["substats"][2]["key"])
-        print("Substat 3:", artifact["substats"][3]["key"])
+        print("Main Stat:", artifact["mainStatKey"].replace("_", "%"))
+        for i in range(len(artifact["substats"])):          #Loop and print all substats
+            print("Substat", i+1, ":", artifact["substats"][i]["key"].replace("_", "%"))
         print("The above artifact is good for:")
         for i in range(len(CharList[0])):       #print all the character's it's good for
             if CharList[1][i] >= 2155: 
-
                 print(CharList[0][i], "Score:", CharList[1][i])
     else:
         print("")
         print("Set:", artifact["setKey"],"-", "Rarity:", artifact["rarity"], "-", "Level:", artifact["level"], "-", "Slot:", artifact["slotKey"])
-        print("Main Stat:", artifact["mainStatKey"])
-        print("Substat 0:", artifact["substats"][0]["key"])
-        print("Substat 1:", artifact["substats"][1]["key"])
-        print("Substat 2:", artifact["substats"][2]["key"])
-        print("Substat 3:", artifact["substats"][3]["key"])
+        print("Main Stat:", artifact["mainStatKey"].replace("_", "%"))
+        for i in range(len(artifact["substats"])):          #Loop and print all substats
+            print("Substat",  i+1, ":", artifact["substats"][i]["key"].replace("_", "%"))
         print("The above artifact is crap")
 
 
@@ -976,7 +972,7 @@ artifact_data = json.load(file)     #take the data from file, load it into the v
 #print("Found", len(artifact_data["artifacts"]), "artifacts")      #Check and print how many artifacts are in the JSON file. Good for debugging
 
 for i in artifact_data["artifacts"]:    #Go through all artifacts
-    if i["rarity"] == 5:      #Ignore all artifacts that are not 5 star
+    if i["rarity"] == 5:
         CalcCharScore(i)
 
 
