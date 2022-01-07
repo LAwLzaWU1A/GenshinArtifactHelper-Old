@@ -976,7 +976,8 @@ artifact_data = json.load(file)     #take the data from file, load it into the v
 #print("Found", len(artifact_data["artifacts"]), "artifacts")      #Check and print how many artifacts are in the JSON file. Good for debugging
 
 for i in artifact_data["artifacts"]:    #Go through all artifacts
-    CalcCharScore(i)
+    if i["rarity"] == 5:      #Ignore all artifacts that are not 5 star
+        CalcCharScore(i)
 
 
 
