@@ -1,0 +1,253 @@
+{
+    "format": "GOOD",
+    "dbVersion": 14,
+    "source": "Genshin Optimizer",
+    "version": 1,
+    "characters": [
+        {
+            "key": "Barbara",
+            "level": 70,
+            "ascension": 4,
+            "hitMode": "avgHit",
+            "reactionMode": "",
+            "conditionalValues": {},
+            "bonusStats": {},
+            "talent": {
+                "auto": 1,
+                "skill": 6,
+                "burst": 4
+            },
+            "infusionAura": "",
+            "constellation": 6,
+            "team": [
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "key": "Albedo",
+            "level": 90,
+            "ascension": 6,
+            "hitMode": "avgHit",
+            "reactionMode": "",
+            "conditionalValues": {},
+            "bonusStats": {},
+            "talent": {
+                "auto": 1,
+                "skill": 9,
+                "burst": 7
+            },
+            "infusionAura": "",
+            "constellation": 0,
+            "team": [
+                "",
+                "",
+                ""
+            ]
+        }
+    ],
+    "artifacts": [
+        {
+            "setKey": "GladiatorsFinale",
+            "rarity": 5,
+            "level": 0,
+            "slotKey": "circlet",
+            "mainStatKey": "hp_",
+            "substats": [
+                {
+                    "key": "atk_",
+                    "value": 4.1
+                },
+                {
+                    "key": "eleMas",
+                    "value": 16
+                },
+                {
+                    "key": "critDMG_",
+                    "value": 6.2
+                },
+                {
+                    "key": "",
+                    "value": 0
+                }
+            ],
+            "location": "",
+            "exclude": false,
+            "lock": false
+        },
+        {
+            "setKey": "Lavawalker",
+            "rarity": 5,
+            "level": 0,
+            "slotKey": "sands",
+            "mainStatKey": "atk_",
+            "substats": [
+                {
+                    "key": "hp_",
+                    "value": 5.8
+                },
+                {
+                    "key": "hp",
+                    "value": 299
+                },
+                {
+                    "key": "def",
+                    "value": 23
+                },
+                {
+                    "key": "",
+                    "value": 0
+                }
+            ],
+            "location": "",
+            "exclude": false,
+            "lock": false
+        },
+        {
+            "setKey": "ShimenawasReminiscence",
+            "rarity": 5,
+            "level": 0,
+            "slotKey": "sands",
+            "mainStatKey": "atk_",
+            "substats": [
+                {
+                    "key": "critRate_",
+                    "value": 5.8
+                },
+                {
+                    "key": "critDMG_",
+                    "value": 4.6
+                },
+                {
+                    "key": "atk_",
+                    "value": 5.3
+                },
+                {
+                    "key": "eleMas",
+                    "value": 19
+                }
+            ],
+            "location": "",
+            "exclude": false,
+            "lock": false
+        },
+        {
+            "setKey": "GladiatorsFinale",
+            "rarity": 5,
+            "level": 0,
+            "slotKey": "flower",
+            "mainStatKey": "hp",
+            "substats": [
+                {
+                    "key": "def_",
+                    "value": 5.8
+                },
+                {
+                    "key": "eleMas",
+                    "value": 16
+                },
+                {
+                    "key": "atk",
+                    "value": 19
+                },
+                {
+                    "key": "",
+                    "value": 0
+                }
+            ],
+            "location": "",
+            "exclude": false,
+            "lock": false
+        }
+    ],
+    "weapons": [
+        {
+            "key": "FerrousShadow",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 5,
+            "location": "",
+            "lock": false
+        },
+        {
+            "key": "DodocoTales",
+            "level": 70,
+            "ascension": 5,
+            "refinement": 5,
+            "location": "",
+            "lock": false
+        },
+        {
+            "key": "TheWidsith",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 4,
+            "location": "",
+            "lock": false
+        },
+        {
+            "key": "PrototypeCrescent",
+            "level": 90,
+            "ascension": 6,
+            "refinement": 4,
+            "location": "Ganyu",
+            "lock": false
+        },
+        {
+            "key": "DullBlade",
+            "level": 1,
+            "ascension": 0,
+            "refinement": 1,
+            "location": "Ningguang",
+            "lock": false
+        }
+    ],
+    "artifactDisplay": {
+        "filterOption": {
+            "artSetKey": "",
+            "rarity": [
+                5,
+                4,
+                3
+            ],
+            "levelLow": 0,
+            "levelHigh": 20,
+            "slotKey": "",
+            "mainStatKey": "",
+            "substats": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "location": "",
+            "excluded": ""
+        },
+        "ascending": false,
+        "sortType": "rarity",
+        "maxNumArtifactsToDisplay": 50,
+        "effFilter": [
+            "hp",
+            "hp_",
+            "atk",
+            "atk_",
+            "def_",
+            "def",
+            "eleMas",
+            "enerRech_",
+            "critRate_",
+            "critDMG_"
+        ],
+        "probabilityFilter": {}
+    },
+    "characterDisplay": {
+        "sortType": "level",
+        "ascending": false,
+        "weaponType": "",
+        "element": ""
+    },
+    "buildsDisplay": {
+        "characterKey": ""
+    }
+}
