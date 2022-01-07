@@ -10,7 +10,8 @@ https://docs.google.com/spreadsheets/d/1gNxZ2xab1J6o1TuNVWMeLOZ7TPOqrsf3SshP5DLv
 
 
 Requires Python 3.10 or later to run.
-A small test file (TestData.json) containing some data in the GOOD format is included for testing purposes.
+A small test file (TestData.json) containing some data in the GOOD format is included for testing purposes. In order to generate your own list of artifacts I recommend "AdeptiScanner-GI", which can be found here:
+https://github.com/D1firehail/AdeptiScanner-GI
 
 
 The script is a complete mess, but this is mostly a learning exercise for me to learn Python, JSON and programming in general.
