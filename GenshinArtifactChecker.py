@@ -926,18 +926,21 @@ def CalcCharScore(artifact):
         print("Main Stat:", artifact["mainStatKey"].replace("_", "%"), file=open("ArtifactResults.txt", "a"))
         for i in range(len(artifact["substats"])):          #Loop and print all substats
             print("Substat", i+1, ":", artifact["substats"][i]["key"].replace("_", "%"), file=open("ArtifactResults.txt", "a"))
-        print("The above artifact is good for:", file=open("ArtifactResults.txt", "a"))
-        for i in range(len(CharList[0])):       #print all the character's it's good for
-            if CharList[1][i] >= 2155: 
-                print(CharList[0][i], "Score:", CharList[1][i], file=open("ArtifactResults.txt", "a"))
-    else:
-        print("", file=open("ArtifactResults.txt", "a"))
-        print("Set:", artifact["setKey"],"-", "Rarity:", artifact["rarity"], "-", "Level:", artifact["level"], "-", "Slot:", artifact["slotKey"], file=open("ArtifactResults.txt", "a"))
-        print("Main Stat:", artifact["mainStatKey"].replace("_", "%"), file=open("ArtifactResults.txt", "a"))
-        for i in range(len(artifact["substats"])):          #Loop and print all substats
-            print("Substat",  i+1, ":", artifact["substats"][i]["key"].replace("_", "%"), file=open("ArtifactResults.txt", "a"))
-        print("The above artifact is crap", file=open("ArtifactResults.txt", "a"))
 
+
+###Uncomment these lines to print which character an artifact is good for and which artifacts aren't good. Useful for debugging purposes but clutters up the output during normal use.
+#        print("The above artifact is good for:", file=open("ArtifactResults.txt", "a"))
+#        for i in range(len(CharList[0])):       #print all the character's it's good for
+#            if CharList[1][i] >= 2155: 
+#                print(CharList[0][i], "Score:", CharList[1][i], file=open("ArtifactResults.txt", "a"))
+#    else:
+#        print("", file=open("ArtifactResults.txt", "a"))
+#        print("Set:", artifact["setKey"],"-", "Rarity:", artifact["rarity"], "-", "Level:", artifact["level"], "-", "Slot:", artifact["slotKey"], file=open("ArtifactResults.txt", "a"))
+#        print("Main Stat:", artifact["mainStatKey"].replace("_", "%"), file=open("ArtifactResults.txt", "a"))
+#        for i in range(len(artifact["substats"])):          #Loop and print all substats
+#            print("Substat",  i+1, ":", artifact["substats"][i]["key"].replace("_", "%"), file=open("ArtifactResults.txt", "a"))
+#        print("The above artifact is crap", file=open("ArtifactResults.txt", "a"))
+###Uncomment these lines to print which character an artifact is good for and which artifacts aren't good. Useful for debugging purposes but clutters up the output during normal use.
 
 
 
