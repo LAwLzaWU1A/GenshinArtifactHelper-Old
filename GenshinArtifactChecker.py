@@ -634,50 +634,50 @@ def Eval_MainGoblet (CharList, artifact):         #Evaluate goblet main stat.
             CharList[1][36] += 1000     #add 1000 to Venti
             CharList[1][14] += 1000     #add 1000 to Kazuha
         case "physical_dmg_":  
-            CharList[1][40] += 1000     #add 1000 to Xinyan
-            CharList[1][26] += 1000     #add 1000 to Razor
-            CharList[1][9] += 1000     #add 1000 to Eula
+            CharList[1][40] += 2000     #add 2000 to Xinyan
+            CharList[1][26] += 2000     #add 2000 to Razor
+            CharList[1][9] += 2000     #add 2000 to Eula
         case "anemo_dmg_":  
-            CharList[1][33] += 1000     #add 1000 to Traveler (Anemo)
-            CharList[1][13] += 1000     #add 1000 to Jean
-            CharList[1][36] += 1000     #add 1000 to Venti
-            CharList[1][38] += 1000     #add 1000 to Xiao
+            CharList[1][33] += 2000     #add 2000 to Traveler (Anemo)
+            CharList[1][13] += 2000     #add 2000 to Jean
+            CharList[1][36] += 2000     #add 2000 to Venti
+            CharList[1][38] += 2000     #add 2000 to Xiao
         case "geo_dmg_":  
-            CharList[1][22] += 1000     #add 1000 to Ningguang
-            CharList[1][23] += 1000     #add 1000 to Noelle
-            CharList[1][45] += 1000     #add 1000 to Gorou
-            CharList[1][34] += 1000     #add 1000 to Traveler (Geo)
-            CharList[1][0] += 1000     #add 1000 to Albedo
-            CharList[1][44] += 1000     #add 1000 to Itto
+            CharList[1][22] += 2000     #add 2000 to Ningguang
+            CharList[1][23] += 2000     #add 2000 to Noelle
+            CharList[1][45] += 2000     #add 2000 to Gorou
+            CharList[1][34] += 2000     #add 2000 to Traveler (Geo)
+            CharList[1][0] += 2000     #add 2000 to Albedo
+            CharList[1][44] += 2000     #add 2000 to Itto
         case "electro_dmg_":  
-            CharList[1][10] += 1000     #add 1000 to Fischl
-            CharList[1][4] += 1000     #add 1000 to Beidou
-            CharList[1][20] += 1000     #add 1000 to Lisa
-            CharList[1][19] += 1000     #add 1000 to Sara
-            CharList[1][35] += 1000     #add 1000 to Traveler (Electro)
-            CharList[1][17] += 1000     #add 1000 to Keqing
-            CharList[1][25] += 1000     #add 1000 to Raiden
+            CharList[1][10] += 2000     #add 2000 to Fischl
+            CharList[1][4] += 2000     #add 2000 to Beidou
+            CharList[1][20] += 2000     #add 2000 to Lisa
+            CharList[1][19] += 2000     #add 2000 to Sara
+            CharList[1][35] += 2000     #add 2000 to Traveler (Electro)
+            CharList[1][17] += 2000     #add 2000 to Keqing
+            CharList[1][25] += 2000     #add 2000 to Raiden
         case "hydro_dmg_":  
-            CharList[1][37] += 1000     #add 1000 to Xiangling
-            CharList[1][31] += 1000     #add 1000 to Tartaglia
-            CharList[1][21] += 1000     #add 1000 to Mona
-            CharList[1][28] += 1000     #add 1000 to Kokomi
+            CharList[1][37] += 2000     #add 2000 to Xiangling
+            CharList[1][31] += 2000     #add 2000 to Tartaglia
+            CharList[1][21] += 2000     #add 2000 to Mona
+            CharList[1][28] += 2000     #add 2000 to Kokomi
         case "pyro_dmg_":  
-            CharList[1][2] += 1000     #add 1000 to Amber
-            CharList[1][37] += 1000     #add 1000 to Xiangling
-            CharList[1][5] += 1000     #add 1000 to Bennett
-            CharList[1][41] += 1000     #add 1000 to Yanfei
-            CharList[1][7] += 1000     #add 1000 to Diluc
-            CharList[1][18] += 1000     #add 1000 to Klee
-            CharList[1][12] += 1000     #add 1000 to Hu Tao
-            CharList[1][42] += 1000     #add 1000 to Yoimiya
+            CharList[1][2] += 2000     #add 2000 to Amber
+            CharList[1][37] += 2000     #add 2000 to Xiangling
+            CharList[1][5] += 2000     #add 2000 to Bennett
+            CharList[1][41] += 2000     #add 2000 to Yanfei
+            CharList[1][7] += 2000     #add 2000 to Diluc
+            CharList[1][18] += 2000     #add 2000 to Klee
+            CharList[1][12] += 2000     #add 2000 to Hu Tao
+            CharList[1][42] += 2000     #add 2000 to Yoimiya
         case "cryo_dmg_":  
-            CharList[1][6] += 1000     #add 1000 to Chongyun
-            CharList[1][15] += 1000     #add 1000 to Kaeya
-            CharList[1][27] += 1000     #add 1000 to Rosaria
-            CharList[1][11] += 1000     #add 1000 to Ganyu
-            CharList[1][16] += 1000     #add 1000 to Ayaka
-            CharList[1][1] += 1000     #add 1000 to Aloy
+            CharList[1][6] += 2000     #add 2000 to Chongyun
+            CharList[1][15] += 2000     #add 2000 to Kaeya
+            CharList[1][27] += 2000     #add 2000 to Rosaria
+            CharList[1][11] += 2000     #add 2000 to Ganyu
+            CharList[1][16] += 2000     #add 2000 to Ayaka
+            CharList[1][1] += 2000     #add 2000 to Aloy
 
     return CharList
 
