@@ -6,6 +6,7 @@ A python script to automatically asses Genshin Impact artifacts to see which one
 This script takes a JSON file formatted using the [Genshin Open Object Description (GOOD) format](https://frzyc.github.io/genshin-optimizer/#/doc/).
 
 It then evaluates each artifact based on the set and stats, gives it a score for each character and then writes the result to a file called "ArtifactResults.txt".
+
 The scores are based on the information in this document [Community Character Builder by the Genshin Helper Team](https://docs.google.com/spreadsheets/d/1gNxZ2xab1J6o1TuNVWMeLOZ7TPOqrsf3SshP5DLvKzI/pubhtml?gid=100510092#) as of January 5 2022.
 
 
@@ -16,8 +17,11 @@ Right now, I got over 1300 artifacts in my inventory. Going through each and eve
 ## How to Use This Script
 First, download the script from this page. I have included a small test file (TestData.json) containing some data in the GOOD format is included for testing purposes.
 Then, obtain a list of artifacts you currently got formatted in the GOOD format. I recommend using ["AdeptiScanner-GI"](https://github.com/D1firehail/AdeptiScanner-GI) which automatically scans your inventory.
+
 Once you got the script and the list of artifacts, run the script with the artifact file as an argument. For example:
+
 `python.exe .\GenshinArtifactChecker.py .\TestData.json`
+
 After the script is done executing, open the "ArtifactResults.txt" file. That file contains a list of all artifacts which has a score of 2155 or higher, which is what I would consider good enough to keep.
 
 
@@ -28,6 +32,7 @@ Make sure your python environment is 3.10 or later, or else the script will not 
 
 ## Disclaimer
 The script is a complete mess, but this is mostly a learning exercise for me to learn Python, JSON and programming in general.
+
 This script does not directly interact with Genshin Impact in any way (although AdeptiScanner does) and as a result it should be completely harmless to your GI account and your PC. However, I am not responsible for any "damage" done to your account, such as the script by mistake labeling a good artifact as bad, causing you to delete it. Use this at your own risk.
 
 
